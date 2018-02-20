@@ -10,21 +10,23 @@ class Blacklapel::CLI
 
   def suit_deals
     #here doc  https://blacklapel.com/
-    @deal = "make sure it works"
-
+    puts "Today's Daily Deals"
+    @deal = Blacklapel::Deal.today
+    @deal.each.with_index(1) do |deal, i|
+      puts "#{i}. #{deal.name} - #{deal.price} - #{deal.availability}}"
+    end
   end
 
   def choice
     input = nil
     while input != "exit"
       input = gets.strip.downcase
-      case input
-      when "1"
-        puts "More info on deal 1..."
-      when "2"
-        puts "More info on deal 2..."
-      when "choice"
-        choice
+      
+      if input.to_i > 0
+        the_deal = @deals[input.to_i-1]
+        puts "#{i}. #{deal.name} - #{deal.price} - #{deal.availability}}"
+      elsif input == "suit_deals"
+        suit_deals
       else
         puts "not sure what you want, type suit_list or exit"
       end

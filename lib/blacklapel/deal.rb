@@ -1,11 +1,12 @@
 class Blacklapel::Deal
   attr_accessor :name, :price, :avalibilty, :url
+
     def self.today
-      #return all instances of a deal
-    puts "Today's suits"
-    puts  "<<-Doc.gsub/^\s*/, ''
-    2. suit jacket -$360-
-    1. double breasted  $549"
+      #return all instances of a deal by scraping blacklapel and macy. then return the data.
+    # puts "Today's suits"
+    # puts  "<<-Doc.gsub/^\s*/, ''
+    # 2. suit jacket -$360-
+    # 1. double breasted  $549"
 
    # blacklapel
     deal_1 = self.new
@@ -13,8 +14,6 @@ class Blacklapel::Deal
     price = "$549"
     avalibilty = true
     url = "https://blacklapel.com/"
-
-
 
     # macys
     deal_2 = self.new
