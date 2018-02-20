@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
-require ''
+require './lib/blacklapel'  #this is my excutation point.
+
 Blacklapel::CLI.new.call
