@@ -7,7 +7,7 @@ class Blacklapel::Deal
     # puts  "<<-Doc.gsub/^\s*/, ''
     # 2. suit jacket -$360-
     # 1. double breasted  $549"
-
+    
    # blacklapel
     deal_1 = self.new
     deal-1.name = "double breasted"
