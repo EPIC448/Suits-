@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'EPIC448'"]
   spec.email         = ["'samrey2018@gmail.com'"]
 
-  spec.summary       = %q{TODO: The Project is about prices for suits. We looked at 2 website blacklapel and Macys and we are going to scrape this websites}
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "The Project is about prices for suits. We looked at 2 website blacklapel and Macys and we are going to scrape this websites"
+   spec.description   ="Indepth Explaination about the project."
+  spec.homepage      = "https://github.com/EPIC448/Suits-"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

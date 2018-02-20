@@ -7,7 +7,7 @@ class Blacklapel::Deal
     # puts  "<<-Doc.gsub/^\s*/, ''
     # 2. suit jacket -$360-
     # 1. double breasted  $549"
-    
+
    # blacklapel
     deal_1 = self.new
     deal-1.name = "double breasted"
@@ -20,7 +20,7 @@ class Blacklapel::Deal
     deal-2.name = "suit jacket"
     price = "$360"
     avalibilty = true
-    Url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
+    url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
 
 #  must return [deal_1, deal_2]
 
