@@ -13,6 +13,8 @@ class Blacklapel::Deal
          # Got to blacklapel, Fing product
          #Extract the properties
          #instantiate a deal.
+         scrapped_deal=[]
+
         deal_1 = self.new
         deal-1.name = "double breasted"
         price = "$549"
