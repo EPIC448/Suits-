@@ -24,8 +24,13 @@ class Blacklapel::Deal
       end
 
       def self.scrape_blacklapel
-        doc = Nokogiri::HTML(open(https://blacklapel.com/))
+        doc = Nokogiri::HTML(open("https://blacklapel.com"))
         binding.pry
+        # name =
+        # price =
+        # avalibilty =
+        # url =
+
       end
 
       # macys
