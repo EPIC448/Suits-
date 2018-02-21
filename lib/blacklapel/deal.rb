@@ -9,34 +9,32 @@ class Blacklapel::Deal
 
  #blacklapel
 
-      def self.scrape_deals
+      def self.scrape_deals  # for all deals.
          # Got to blacklapel, Fing product
          #Extract the properties
          #instantiate a deal.
-         scrapped_deal=[]
-
-      # blacklapel
-       scrapped_deal << self.scrape_blacklapel
+      # scrapped_deal=[]
+      # scrapped_deal << self.scrape_blacklapel
         # deal_1 = self.new
         # deal-1.name = "double breasted"
         # price = "$549"
         # avalibilty = true
         # url = "https://blacklapel.com/"
 
-        # macys
-        scrapped_deal << self.scrape_blacklapel
-        # deal_2 = self.new
-        # deal-2.name = "suit jacket"
-        # price = "$360"
-        # avalibilty = true
-        # url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
-
-        #  must return array of sracpped deals. [deal_1, deal_2]
-
       end
 
-      def self.scrape_deal
-
+      def self.scrape_blacklapel
+        doc = Nokogiri::HTML(open(https://blacklapel.com/))
+        binding.pry
       end
 
+      # macys
+      # scrapped_deal << self.scrape_macys
+      # deal_2 = self.new
+      # deal-2.name = "suit jacket"
+      # price = "$360"
+      # avalibilty = true
+      # url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
+
+      #  must return array of sracpped deals. [deal_1, deal_2]
 end

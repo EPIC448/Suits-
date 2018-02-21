@@ -1,4 +1,4 @@
-require'open-url'
+require'open-uri' #it uri not you URL
 require 'nokogiri'
 require 'pry'
 require_relative "./blacklapel/version"
