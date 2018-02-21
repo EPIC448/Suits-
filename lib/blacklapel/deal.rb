@@ -15,20 +15,27 @@ class Blacklapel::Deal
          #instantiate a deal.
          scrapped_deal=[]
 
-        deal_1 = self.new
-        deal-1.name = "double breasted"
-        price = "$549"
-        avalibilty = true
-        url = "https://blacklapel.com/"
+      # blacklapel
+       scrapped_deal << self.scrape_blacklapel
+        # deal_1 = self.new
+        # deal-1.name = "double breasted"
+        # price = "$549"
+        # avalibilty = true
+        # url = "https://blacklapel.com/"
 
         # macys
-        deal_2 = self.new
-        deal-2.name = "suit jacket"
-        price = "$360"
-        avalibilty = true
-        url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
+        scrapped_deal << self.scrape_blacklapel
+        # deal_2 = self.new
+        # deal-2.name = "suit jacket"
+        # price = "$360"
+        # avalibilty = true
+        # url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
 
         #  must return array of sracpped deals. [deal_1, deal_2]
+
+      end
+
+      def self.scrape_deal
 
       end
 
