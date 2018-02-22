@@ -1,3 +1,4 @@
+require 'capybara/poltergeist'
 class Blacklapel::Deal
   attr_accessor :name, :price, :avalibilty, :url
   # we are combining the scrape method into our deals rather than doing them seperatly..
@@ -7,39 +8,26 @@ class Blacklapel::Deal
         self.scrape_deals
     end
 
- #blacklapel
 
       def self.scrape_deals  # for all deals.
-         # Got to blacklapel, Fing product
-         #Extract the properties
-         #instantiate a deal.
-      # scrapped_deal=[]
-      # scrapped_deal << self.scrape_blacklapel
-        # deal_1 = self.new
-        # deal-1.name = "double breasted"
-        # price = "$549"
-        # avalibilty = true
-        # url = "https://blacklapel.com/"
-
+        scrapped_deal = []
+        scrapped_deal << self.scrape_mens_warehouse
       end
 
-      def self.scrape_blacklapel
-        doc = Nokogiri::HTML(open("https://blacklapel.com"))
-        binding.pry
-        # name =
-        # price =
-        # avalibilty =
-        # url =
+      def self.scrape_mens_warehouse
+       doc = Nokogiri::HTML(open("https://www.menswearhouse.com/mens-clothes/mens-suit-separates/suit-separate-coats/pronto-uomo-platinum-modern-fit-suit-separates-coat-navy-sharkskin-343F344F81"))
+       name = doc.search("h1.prod-title").text
+       price = doc.search("review-price.final-price regular > p").text
+       url = doc.search("a.product-info-label")
+       avalibilty =true
 
-      end
-
-      # macys
-      # scrapped_deal << self.scrape_macys
+         binding.pry
       # deal_2 = self.new
       # deal-2.name = "suit jacket"
       # price = "$360"
       # avalibilty = true
-      # url = "https://www.macys.com/shop/b/suit-jacket?id=74300"
+      # url = "https://www.menswearhouse.com/mens-clothes/mens-suit-separates/suit-separate-coats/pronto-uomo-platinum-modern-fit-suit-separates-coat-navy-sharkskin-343F344F81"
+       end
 
       #  must return array of sracpped deals. [deal_1, deal_2]
 end

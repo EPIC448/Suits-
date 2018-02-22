@@ -23,6 +23,8 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+ Over view of how the app will work overview..
+ Install Bundle
 
 ## Development
 
