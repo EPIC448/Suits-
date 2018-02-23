@@ -13,7 +13,7 @@ class Blacklapel::CLI
     puts "Today's Daily Deals"
     @deal = Blacklapel::Deal.today
     @deal.each.with_index(1) do |deal, i|
-      puts "#{i}. #{scrapped_deal.name} - #{scrapped_deal.price} - #{scrapped_deal.availability}}"
+      puts "#{i}. #{deal.name} - #{deal.price} - #{deal.availability}"
     end
   end
 
@@ -21,7 +21,7 @@ class Blacklapel::CLI
     input = nil
     while input != "exit"
       input = gets.strip.downcase
-      
+
       if input.to_i > 0
         the_deal = @deals[input.to_i-1]
         puts "#{i}. #{deal.name} - #{deal.price} - #{deal.availability}}"

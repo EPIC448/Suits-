@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-require './lib/blacklapel'  #this is my excutation point.
+# require './lib/blacklapel'  #this is my excutation point.
+
 require "bundler/setup"
 require "blacklapel"
+
 Blacklapel::CLI.new.call
