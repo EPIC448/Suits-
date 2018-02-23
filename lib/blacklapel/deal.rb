@@ -15,15 +15,17 @@ class Blacklapel::Deal
       end
 
       def self.scrape_mens_warehouse
-       doc = Nokogiri::HTML(open("https://www.menswearhouse.com/mens-clothes/mens-suit-separates/suit-separate-coats/pronto-uomo-platinum-modern-fit-suit-separates-coat-navy-sharkskin-343F344F81"))
+       doc = Nokogiri::HTML(open("https://menswearhouse.com/mens-suits/slim-fit-extra-trim-suits/calvin-klein-navy-plaid-extreme-slim-fit-suit-37LX37LY61"))
        deal = self.new
-       deal.name = doc.search("h1.prod-title").text
-       deal.price = doc.search("p.final-price regular").text #recheck price
+       binding.pry
+       deal.name = doc.css("h1.prod-title").text
+       deal.price = doc.css("p.final-price regular").text #recheck price
        deal.url = "https://menswearhouse.com"
        deal.avalibity = true
 
        deal
 
        end
+
 
 end
