@@ -12,19 +12,20 @@ class Blacklapel::Deal
       def self.scrape_deals  # for all deals.
         scrapped_deal = []
         scrapped_deal << self.scrape_mens_warehouse
+        scrapped_deal
       end
 
       def self.scrape_mens_warehouse
        doc = Nokogiri::HTML(open("https://www.menswearhouse.com/mens-clothes/mens-suit-separates/suit-separate-coats/pronto-uomo-platinum-modern-fit-suit-separates-coat-navy-sharkskin-343F344F81"))
 
-       deal.name = doc.search("h1.prod-title").text
-       deal.price = doc.search("review-price.final-price regular > p").text #recheck price
-       deal.url = doc.search("a.product-info-label").first.attr("href")
-       deal.avalibilty =true
+       scrapped_deal = self.new
+       scrapped_deal.name = doc.search("h1.prod-title").text
+       scrapped_deal.price = doc.search("review-price.final-price regular > p").text #recheck price
+       scrapped_deal.url = doc.search("a.product-info-label").first.attr("href")
+       scrapped_deal.avalibilty =true
 
 
-       deal = self.new
-         binding.pry
+
       # deal_2 = self.new
       # deal-2.name = "suit jacket"
       # price = "$360"
