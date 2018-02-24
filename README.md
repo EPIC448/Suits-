@@ -7,7 +7,7 @@ TODO: Delete this and the text above, and describe your gem
 ## Installation
 
 Add this line to your application's Gemfile:
-
+type Install "bundle install"
 ```ruby
 gem 'blacklapel'
 ```
@@ -26,6 +26,10 @@ TODO: Write usage instructions here
  Once you open up the suit directory, you want to load up the Bundler by typing   Install Bundle by typing in the bundle install .
  Also makes use that you have SelectorGadget install on you chromo browser as this would save you lot of time in the scraping world.
 
+ The user can type in ./bin/bin_blacklapel to start the CLI.
+  Then it list all the deals that are aviable to us for that day.
+   The user can type 1 or 2 to get which ever deals they would like on suits.
+   The user can type exit the program. 
  Over view of how the app will work overview..
 
 ## Development
