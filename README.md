@@ -23,8 +23,10 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+ Once you open up the suit directory, you want to load up the Bundler by typing   Install Bundle by typing in the bundle install .
+ Also makes use that you have SelectorGadget install on you chromo browser as this would save you lot of time in the scraping world.
+
  Over view of how the app will work overview..
- Install Bundle
 
 ## Development
 
