@@ -10,11 +10,10 @@ class Blacklapel::Deal
       def self.scrape_deals  # for all deals.
         deals = []
         deals << self.scrape_mens_warehouse
-
         deals
       end
 
-      def self.scrape_mens_warehouse
+     def self.scrape_mens_warehouse
        doc = Nokogiri::HTML(open("https://menswearhouse.com/mens-suits/slim-fit-extra-trim-suits/calvin-klein-navy-plaid-extreme-slim-fit-suit-37LX37LY61"))
        deal = self.new
        #HUGE TOOL FOR SCRAPING ****Selector Gadget**** Targets what is most needed.
@@ -24,6 +23,6 @@ class Blacklapel::Deal
        deal.avalibity = doc.css("#findInStoreAccordion , .js-swatch-item:nth-child(5) img").text
 
        deal
+      end
 
-       end
 end
