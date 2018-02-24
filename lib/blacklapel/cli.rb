@@ -8,7 +8,7 @@ class Blacklapel::CLI
 
   end
 
-  def suit_deals
+  def suit_deals  #
     puts "Today's Daily Deals"
     @deal = Blacklapel::Deal.today
     @deal.each.with_index(1) do |deal, i|
@@ -16,6 +16,7 @@ class Blacklapel::CLI
     end
   end
 
+#how did avi use meun a.k.a choices. min 19
   def choice
     input = nil
     while input != "exit"
@@ -24,10 +25,10 @@ class Blacklapel::CLI
       if input.to_i > 0
         deal = @deals[input.to_i-1]
         puts "#{i}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
-      elsif input == "suit_deals"
+      elsif input == "suit"
         suit_deals
       else
-        puts "not sure what you want, type suit_deals or exit"
+        puts "not sure what you want, type suit or exit"
       end
     end
   end
