@@ -2,6 +2,8 @@
 class Blacklapel::Deal
   attr_accessor :name, :price, :avalibity, :url
   # we are combining the scrape method into our scrape method using the mens wear house  site.
+
+
   def self.today
     self.scrape_deals
   end
@@ -19,11 +21,12 @@ class Blacklapel::Deal
   def self.scrape_Homepage_mens_warehouse
     doc = Nokogiri::HTML(open("https://www.menswearhouse.com/mens-suits"))
     deal = self.new
-    #HUGE TOOL FOR SCRAPING ****Selector Gadget**** Targets what is most needed.
-    deal.name = doc.css(".icon-tmw-logo-black , .current-page").text.strip
-    deal.price = doc.css("p#offerPrice_700395328.product-price-discount").text #recheck price
+    binding.pry
+    # HUGE TOOL FOR SCRAPING ****Selector Gadget**** Targets what is most needed.
+    deal.name = doc.css(".product-name").text.strip
+    deal.price = doc.css(".product-price-discount").text #recheck price
     deal.url = "https://menswearhouse.com"
-    deal.avalibity = doc.css("p#promotionStr_700734302").text
+    deal.avalibity =  doc.css(".promotion-callout").text.strip
 
     deal   # Always call the method.
 
@@ -41,4 +44,5 @@ class Blacklapel::Deal
     deal
   end
 
+  
 end
