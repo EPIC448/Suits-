@@ -21,7 +21,6 @@ class Blacklapel::Deal
   def self.scrape_Homepage_mens_warehouse
     doc = Nokogiri::HTML(open("https://www.menswearhouse.com/mens-suits"))
     deal = self.new
-    binding.pry
     # HUGE TOOL FOR SCRAPING ****Selector Gadget**** Targets what is most needed.
     deal.name = doc.css(".product-name").text.strip
     deal.price = doc.css(".product-price-discount").text #recheck price
@@ -44,5 +43,5 @@ class Blacklapel::Deal
     deal
   end
 
-  
+
 end
