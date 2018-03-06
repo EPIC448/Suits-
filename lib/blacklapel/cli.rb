@@ -21,9 +21,10 @@ class Blacklapel::CLI
     input = nil
     while input != "exit"
       input = gets.strip.downcase
+      i = input.to_i-1
 
       if input.to_i > 0
-        deal = @deals[input.to_i-1]
+        deal = @deal[i]
         puts "#{i}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
       elsif input == "suit"
         suit_deals
