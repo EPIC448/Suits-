@@ -39,3 +39,5 @@ class Blacklapel::CLI
     puts 'see you tomorrow'
   end
 end
+
+…

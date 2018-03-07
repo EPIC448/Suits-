@@ -40,8 +40,6 @@ class Blacklapel::Deal
     deal.price = doc.css(".regular").text
     deal.url = "https://menswearhouse.com/mens-suits/slim-fit-extra-trim-suits/calvin-klein-navy-plaid-extreme-slim-fit-suit-37LX37LY61"
     deal.avalibity = doc.css("#findInStoreAccordion , .js-swatch-item:nth-child(5) img").text
-    deal.tap{|x| puts x}
-    binding.pry
      deal
 
   end
