@@ -12,8 +12,7 @@ class Blacklapel::CLI
     puts "Today's Daily Deals"
     @deal = Blacklapel::Deal.today
     @deal.each.with_index(1) do |deal, i|
-    deal.each.with
-      binding.pry
+    # possible (iterate over deal again.. becasue is an array.. so it only return one thing in the array,  or set it up in "today's method to to return only on thing in the array"
       puts "#{i}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
     end
   end
