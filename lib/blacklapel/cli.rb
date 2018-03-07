@@ -12,6 +12,8 @@ class Blacklapel::CLI
     puts "Today's Daily Deals"
     @deal = Blacklapel::Deal.today
     @deal.each.with_index(1) do |deal, i|
+    deal.each.with
+      binding.pry
       puts "#{i}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
     end
   end
