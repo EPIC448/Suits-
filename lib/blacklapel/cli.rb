@@ -1,3 +1,4 @@
+
 # This is  CLI controller
 class Blacklapel::CLI
 
@@ -10,7 +11,7 @@ class Blacklapel::CLI
 
   def suit_deals  #
     puts "Today's Daily Deals"
-    @deal = Blacklapel::Deal.today
+    @deal = Blacklapel::Deal.scrape_Homepage_mens_warehouse
     @deal.each.with_index(1) do |deal, i|
     # possible (iterate over deal again.. becasue is an array.. so it only return one thing in the array,  or set it up in "today's method to to return only on thing in the array"
       puts "#{i}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
@@ -26,7 +27,7 @@ class Blacklapel::CLI
 
       if input.to_i > 0
         deal = @deal[i]
-        puts "#{i}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
+        puts "#{i + 1}. #{deal.name} - #{deal.price} - #{deal.avalibity}"
       elsif input == "suit"
         suit_deals
       else
@@ -39,5 +40,3 @@ class Blacklapel::CLI
     puts 'see you tomorrow'
   end
 end
-
-…
