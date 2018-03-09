@@ -9,7 +9,7 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
       And Enjoy some Suit Deals
 
 ## Usage
-   Type in the suit the view the variety of suits    
+   Type in the "suit" the view the variety of suits    
     Type in what number of in the suit listings you want more details about.
      And Type exit to discontinue the game.
 
