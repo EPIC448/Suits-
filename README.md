@@ -4,19 +4,14 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 
 ## Installation Instructions.  
-    Open up your terminal. And you want to clone the project to your local computer. Then, you  in your terminal. You would be located at an over all directory.
-    As this point, you "cd" into the download code.
-    >>>>>> Make sure type install bundle to install all the proper gems for this CLI to work <<<<<
+    Open up your terminal. And Type "gem install blacklapel"
+     Type in your terminal "bin_blacklapel"
+      And Enjoy some Suit Deals
 
 ## Usage
-
-    Once you open up the suit directory, you want to load up the Bundler by typing   Install Bundle by typing in the bundle install .
-    Also makes use that you have SelectorGadget install on you chromo browser as this would save you lot of time in the scraping world.
-
- The user can type in ./bin/bin_blacklapel to start the CLI.
- Then the CLI will list all the deals that are available to us for MensWearHouse for that day.
- The user can user can enter a numerical input get more more information about deals on suits.
- The user can type exit the program to exit the program.
+   Type in the suit the view the variety of suits    
+    Type in what number of in the suit listings you want more details about.
+     And Type exit to discontinue the game.
 
 ## Development
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
