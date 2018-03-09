@@ -1,19 +1,20 @@
 
- For some reason. the chomd command did not work for my project....Video... 10:10 min . . When changing the permissson for your the bin file there is huge difference between "chmod +x bin_blacklapel" and chomd...... The speeling can make a differences in your code...
+ For some reason. the chomd command did not work for my project....Video... 10:10 min . . When changing the permission for your the bin file there is huge difference between "chmod +x bin_blacklapel" and chomd...... The spelling can make a differences in your code...
 
- So what is a Deal... and who do we like it so much . A deal must have name , price Url or link avalibilty
+ So what is a Deal... and who do we like it so much .
+  A deal must have name , price, Url or link availability
 
-  When changing the permissson for your the bin file there is huge difference between "chmod +x bin_blacklapel" and chomd...... The speeling can make a differences in your code...
+  When changing the permission for your the bin file there is huge difference between "chmod +x bin_blacklapel" and chomd...... The spelling can make a differences in your code...
 
 . So what is a Deal... and who do we like it so much .  A deal must have
 + name ,
 +price
 +Url or link
-+avalibilty
++availability
 
 Then. Turn the assume code into real life data for use. This help with making the site.. Really work as we scrape blacklapel and macys sites. However, this site did not work as planned so we changed them to the menswearhouse.
 
- **** I realaize that there is huge difference between .. require_relative and require.... such an eye openener. ***
+ **** I realize that there is huge difference between .. require_relative and require.... such an eye opener. ***
 
   Did A mistake with the line 27 in deals by not add a string to the website.
 
@@ -35,4 +36,4 @@ Then. Turn the assume code into real life data for use. This help with making th
        ....
 
 
- So we want to iterate twoo level deeps... within the code. scrape 2 levels deep.  deal 1 or deal 2 t
+ So we want to iterate two level deeps... within the code. scrape 2 levels deep.  deal 1 or deal 2 t

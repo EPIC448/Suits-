@@ -3,26 +3,15 @@
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/blacklapel`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 
-## Installation
-
-Add this line to your application's Gemfile:
-type Install "bundle install"
-```ruby
-gem 'blacklapel'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install blacklapel
+## Installation Instructions.  
+    Open up your terminal. And you want to clone the project to your local computer. Then, you  in your terminal. You would be located at an over all directory.
+    As this point, you "cd" into the download code.
+    >>>>>> Make sure type install bundle to install all the proper gems for this CLI to work <<<<<
 
 ## Usage
 
- Once you open up the suit directory, you want to load up the Bundler by typing   Install Bundle by typing in the bundle install .
- Also makes use that you have SelectorGadget install on you chromo browser as this would save you lot of time in the scraping world.
+    Once you open up the suit directory, you want to load up the Bundler by typing   Install Bundle by typing in the bundle install .
+    Also makes use that you have SelectorGadget install on you chromo browser as this would save you lot of time in the scraping world.
 
  The user can type in ./bin/bin_blacklapel to start the CLI.
  Then the CLI will list all the deals that are available to us for MensWearHouse for that day.
