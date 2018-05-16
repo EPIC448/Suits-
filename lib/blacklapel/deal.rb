@@ -12,7 +12,6 @@ class Blacklapel::Deal
     deal.price = box_contain.css(".product-price-discount").text #recheck price
     deal.url = "https://www.menswearhouse.com/mens-suits"
     deal.avalibity = box_contain.css(".promotion-callout").text.strip
-
     deal   # Always call the method.
   end
 end
